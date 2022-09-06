@@ -12,19 +12,13 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-overlay.jpg);
-}
-@media screen and (min-width: 480px) {
-  .overlay {
+  @include mobile {
     width: 480px;
   }
-}
-@media screen and (min-width: 768px) {
-  .overlay {
+  @include tablet {
     width: 768px;
   }
-}
-@media screen and (min-width: 1200px) {
-  .overlay {
+  @include desktop {
     width: 1600px;
   }
 }

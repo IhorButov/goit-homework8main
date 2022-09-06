@@ -1,16 +1,16 @@
 .team {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .team__title {
   margin-bottom: 10px;
-  .team & {
-    width: calc((1170px - 90px) / 4);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    color: var(--title-text-color);
-  }
+  width: calc((1170px - 90px) / 4);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--title-text-color);
   .section-title & {
     margin-bottom: 50px;
   }
@@ -24,15 +24,38 @@
   color: var(--primary-text-color);
 }
 .job {
-  padding: 30px 0;
+  /*padding: 30px 0;*/
+  padding-top: 30px;
+  padding-left: 0;
+  padding-bottom: 24px;
+  padding-right: 0;
 }
 .team__item {
+  width: 290px;
   background-color: var(--primaty-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  .team &:not(:last-child) {
-    margin-right: 30px;
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 354px;
+  }
+  @include desktop {
+    width: 270px;
+  }
+}
+.image-team {
+  width: 290px;
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 354px;
+  }
+  @include desktop {
+    width: 270px;
   }
 }
 .social-list {
