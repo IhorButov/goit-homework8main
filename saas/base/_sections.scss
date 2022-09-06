@@ -1,0 +1,42 @@
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.section-hero {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #2f303a;
+  @include mobile {
+    padding: 120px 0;
+  }
+  @include tablet {
+    padding: 150px 0;
+  }
+  @include desktop {
+    padding: 200px 0;
+  }
+}
+.section-features {
+  padding: 60px 0;
+  @include desktop {
+    padding: 94px 0;
+  }
+}
+
+.section-gallery {
+  padding: 94px 0;
+}
+.section-team {
+  padding: 94px 0;
+  background-color: var(--section-background-color);
+}
+.section-clients {
+  padding: 94px 0;
+}
+.section-portfolio {
+  padding: 94px 0;
+}

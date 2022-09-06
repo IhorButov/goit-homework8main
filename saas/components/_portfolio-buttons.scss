@@ -1,0 +1,33 @@
+.filter-button {
+  display: border-box;
+  font-family: inherit;
+  cursor: pointer;
+  border: 0;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-main);
+  color: var(--filterbutton-main-color);
+  background-color: var(--filterbutton-bg-color);
+  &:hover,
+  &:focus {
+    color: var(--filterbutton-bg-color);
+    background-color: var(--filterbutton-secondbg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.filter-button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.filter-button-list .button-item:not(:last-child) {
+  margin-right: 8px;
+}

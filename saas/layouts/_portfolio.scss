@@ -1,0 +1,97 @@
+/* --- Filter Buttons ---  */
+.filter-button {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-main);
+  color: var(--filterbutton-main-color);
+  border: none;
+  background-color: var(--filterbutton-bg-color);
+  &:hover,
+  &:focus {
+    color: var(--filterbutton-bg-color);
+    background-color: var(--filterbutton-secondbg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.filter-button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.filter-button-list .button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* --- Portfolio ---  */
+.portfolio-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-container {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+  border-top: 0;
+}
+.portfolio-item {
+  width: cacl((1170px - 60px)/3);
+}
+
+.portfolio-link {
+  display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-main);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.description {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: left;
+  justify-content: center;
+  padding: 63px 23px;
+  color: var(--primaty-bg-color);
+  background: rgba(33, 150, 243, 0.9);
+  transition-property: transform;
+  transform: translatey(101%);
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-main);
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    transform: translatey(0);
+  }
+}

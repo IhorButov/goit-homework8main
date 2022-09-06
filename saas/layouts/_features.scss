@@ -1,0 +1,51 @@
+.features-icon-container {
+  width: 290px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--features-bg-color);
+  padding: 25px 100px;
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 354px;
+  }
+  @include desktop {
+    width: 270px;
+  }
+}
+.features-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.features-text {
+  text-align: left;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+.features-head {
+  width: 270px;
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 354px;
+  }
+  @include desktop {
+    width: 270px;
+  }
+}
+
+.features-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
