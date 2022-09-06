@@ -1,8 +1,8 @@
 /* --- Filter Buttons ---  */
 .filter-button {
-  padding: 6px 22px;
+  padding: 2px 14px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.62;
   text-align: center;
   border-radius: 4px;
@@ -19,43 +19,99 @@
     background-color: var(--filterbutton-secondbg-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+  @include mobile {
+    padding: 6px 22px;
+    font-style: 16px;
+  }
+  @include tablet {
+    padding: 6px 22px;
+    font-style: 16px;
+  }
+  @include desktop {
+    padding: 6px 22px;
+    font-style: 16px;
+  }
 }
 
 .filter-button-list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 40px;
+  justify-content: left;
+  @include mobile {
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+  @include tablet {
+    gap: 8px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  @include desktop {
+    gap: 8px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
-.filter-button-list .button-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 /* --- Portfolio ---  */
 .portfolio-title {
+  text-align: left;
   margin-bottom: 4px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  @include mobile {
+    font-size: 18px;
+  }
+  @include tablet {
+    font-size: 18px;
+  }
+  @include desktop {
+    font-size: 18px;
+  }
 }
 .portfolio-text {
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.87;
   color: var(--primary-text-color);
+  @include mobile {
+    font-size: 16px;
+  }
+  @include tablet {
+    font-size: 16px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  text-align: left;
 }
 .portfolio-container {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
   border-top: 0;
 }
+
 .portfolio-item {
-  width: cacl((1170px - 60px)/3);
+  width: 290px;
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 354px;
+    /*width: cacl((768px - 60px) / 2);*/
+  }
+  @include desktop {
+    /*width: cacl((1170px - 60px)/3);*/
+    width: 370px;
+  }
 }
 
 .portfolio-link {

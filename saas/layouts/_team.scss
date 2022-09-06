@@ -29,6 +29,9 @@
   padding-left: 0;
   padding-bottom: 24px;
   padding-right: 0;
+  @include desktop {
+    padding-bottom: 30px;
+  }
 }
 .team__item {
   width: 290px;
@@ -46,7 +49,7 @@
     width: 270px;
   }
 }
-.image-team {
+/*.image-team {
   width: 290px;
   @include mobile {
     width: 450px;
@@ -57,7 +60,7 @@
   @include desktop {
     width: 270px;
   }
-}
+}*/
 .social-list {
   display: flex;
   justify-content: center;
