@@ -9,7 +9,7 @@
   @include desktop {
     gap: 12px;
     width: 570px;
-    flex-wrap: no;
+    flex-wrap: nowrap;
   }
 }
 .modal-footer-title {
