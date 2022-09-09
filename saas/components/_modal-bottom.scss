@@ -1,19 +1,36 @@
 .modal-footer-form {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include tablet {
+    width: 450px;
+    align-items: space-between;
+  }
+  @include desktop {
+    gap: 12px;
+    width: 570px;
+    flex-wrap: no;
+  }
 }
 .modal-footer-title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
   color: var(--hero-text-color);
+  @include desktop {
+    gap: 12px;
+    width: 470px;
+    text-align: left;
+  }
 }
 .modal-footer {
   display: block;
 }
 .footer-email {
-  width: 358px;
+  width: 290px;
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
@@ -24,6 +41,15 @@
   line-height: 1.25;
   background: var(--hero-background-color);
   color: rgba(255, 255, 255, 0.6);
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 450px;
+  }
+  @include desktop {
+    width: 358px;
+  }
 }
 .footer-modal-button {
   display: flex;
