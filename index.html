@@ -165,15 +165,15 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="gallery-list list">
                         <li class="gallery-item">
-                            <img src="./images/box1.jpg" width="370" alt="Программирование">
+                            <img srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x" src="./images/box1.jpg" width="370" alt="Программирование">
                             <p class="gallery-text">Десктопные приложения</p>
                         </li>
                         <li class="gallery-item">
-                            <img src="./images/box2.jpg" width="370" alt="Маркетинг">
+                            <img srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x" src="./images/box2.jpg" width="370" alt="Маркетинг">
                             <p class="gallery-text">Мобильные приложения</p>
                         </li>
                         <li class="gallery-item">
-                            <img src="./images/box3.jpg" width="370" alt="Дизайн">
+                            <img srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x" src="./images/box3.jpg" width="370" alt="Дизайн">
                             <p class="gallery-text">Дизайнерские решения</p>
                         </li>
                 </ul>
@@ -185,7 +185,16 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team list">
                     <li class="team__item">
-                        <img src="./images/ihor-demyanenko.jpg" width="270" alt="Игорь Демьяненко" class="image-team">
+                        <picture>
+                            <source srcset="./images/ihor-demyanenko.jpg 1x, ./images/ihor-demyanenko-2x.jpg 2x"
+                            media="(min-width:1200px)">
+                            <source srcset="./images/ihor-demyanenko.jpg 1x, ./images/ihor-demyanenko-2x.jpg 2x"
+                            media="(min-width:768px)">
+                            <source srcset="./images/ihor-demyanenko.jpg 1x, ./images/ihor-demyanenko-2x.jpg 2x"
+                            media="(max-width:767px)">
+                            <!--вставлять самую широкую, и в ширину и высоту также-->
+                            <img src="./images/ihor-demyanenko.jpg" width="270" alt="Игорь Демьяненко" class="image-team">
+                        </picture>
                         <div class="job">
                             <h3 class="team__title team">Игорь Демьяненко</h3>
                             <p lang="en" class="team__job">Product Designer</p>

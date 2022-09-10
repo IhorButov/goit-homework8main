@@ -17,4 +17,9 @@
   --second-icon-color: #ffffff;
   --main-font: Roboto, sand-serif;
   --transition-timing-main: cubic-bezier(0.4, 0, 0.2, 1);
+  --bg-gradient: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
 }

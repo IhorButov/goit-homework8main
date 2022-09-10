@@ -6,19 +6,33 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-overlay.jpg);
+  background-image: var(--bg-gradient), url(../images/hero-overlay-mobile.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: var(--bg-gradient),
+      url(../images/hero-overlay-mobile-2x.jpg);
+  }
   @include mobile {
     width: 480px;
+    @include retina {
+      background-image: var(--bg-gradient),
+        url(../images/hero-overlay-mobile-2x.jpg);
+    }
   }
   @include tablet {
     width: 768px;
+    background-image: var(--bg-gradient), url(../images/hero-overlay-tablet.jpg);
+    @include retina {
+      background-image: var(--bg-gradient),
+        url(../images/hero-overlay-tablet-2x.jpg);
+    }
   }
   @include desktop {
     width: 1600px;
+    background-image: var(--bg-gradient), url(../images/hero-overlay.jpg);
+    @include retina {
+      background-image: var(--bg-gradient), url(../images/hero-overlay-2x.jpg);
+    }
   }
 }
