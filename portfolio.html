@@ -22,48 +22,86 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <a href="./index.html" lang="en" class="logo navigation__logo"
-            ><span class="navigation__web">Web</span>Studio</a
-          >
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a
-                href="./index.html"
-                class="navigation__link navigation_ current link"
-                >Студия</a
-              >
+    <header class="header">
+      <div class="header-container container">
+        <a href="./index.html" lang="en" class="logo navigation__logo">
+          <span class="navigation__web">Web</span>Studio
+        </a>
+        <!-- Меню -->
+        <div class="menu header__menu" id="menu" data-menu>
+          <nav class="navigation">
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a href="./index.html" class="navigation__link link">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="navigation__link current link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#contancts" class="navigation__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Контакты -->
+          <ul class="contacts mobile-contacts list">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__links link">
+                <svg class="contacts__mail-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use></svg
+                >info@devstudio.com
+              </a>
             </li>
-            <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="#contancts" class="navigation__link link">Контакты</a>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__links link">
+                <svg class="contacts__phone-icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use></svg
+                >+38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__links link">
-              <svg class="contacts__mail-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use></svg
-              >info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__links link">
-              <svg class="contacts__phone-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use></svg
-              >+38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <!-- Ссылки на социальные сети -->
+          <ul class="mobile-socs list">
+            <li class="mobile-socs__item">
+              <a href="" class="mobile-socs__link link">Instagram</a>
+            </li>
+            <li class="mobile-socs__item">
+              <a href="" class="mobile-socs__link link">Twitter</a>
+            </li>
+            <li class="mobile-socs__item">
+              <a href="" class="mobile-socs__link link">Facebook</a>
+            </li>
+            <li class="mobile-socs__item">
+              <a href="" class="mobile-socs__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Кнопка меню -->
+        <button
+          type="button"
+          class="menu__button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg
+            width="40px"
+            height="40px"
+            aria-controls="menu"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="menu__icon-menu icon"
+              href="./images/icons.svg#icon-navigation-button"
+            ></use>
+            <use
+              class="menu__icon-close icon"
+              href="./images/icons.svg#icon-close-hero-button"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Кнопки и фильтра -->
       <section class="section-portfolio">
@@ -363,5 +401,7 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/header.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
