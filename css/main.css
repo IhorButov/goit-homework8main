@@ -257,6 +257,7 @@ html {
   display: flex;
   align-items: center;
   padding: 16px 15px;
+  text-align: left;
 }
 
 .navigation-button-open {
@@ -306,12 +307,10 @@ html {
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-  }
-  .header .contacts {
-    margin-left: auto;
+    flex-direction: column;
+    /*.header & {
+      margin-left: auto;
+    }*/
   }
 }
 @media screen and (min-width: 1200px) {
@@ -387,7 +386,7 @@ html {
   background-color: var(--accent-color);
 }
 
-.header-mobile-menu {
+.mobile-menu {
   position: fixed;
   background-color: var(--primaty-bg-color);
   top: 0;
@@ -398,7 +397,7 @@ html {
   z-index: 100;
 }
 @media screen and (min-width: 768px) {
-  .header-mobile-menu {
+  .mobile-menu {
     display: none;
   }
 }

@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   padding: 16px 15px;
+  text-align: left;
 }
 .navigation-button-open {
   display: block;
@@ -50,12 +51,10 @@
   display: none;
   @include tablet {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    .header & {
+    flex-direction: column;
+    /*.header & {
       margin-left: auto;
-    }
+    }*/
   }
   @include desktop {
     display: flex;
@@ -122,7 +121,7 @@
   border-radius: 2px;
   background-color: var(--accent-color);
 }
-.header-mobile-menu {
+.mobile-menu {
   position: fixed;
   background-color: var(--primaty-bg-color);
   top: 0;
