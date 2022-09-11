@@ -306,8 +306,9 @@ html {
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
   }
   .header .contacts {
     margin-left: auto;
@@ -325,7 +326,7 @@ html {
 }
 
 .contacts__links {
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   font-weight: 500;
   line-height: 1.14;

@@ -50,8 +50,9 @@
   display: none;
   @include tablet {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     .header & {
       margin-left: auto;
     }
@@ -66,7 +67,7 @@
   }
 }
 .contacts__links {
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   font-weight: 500;
   line-height: 1.14;
