@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css">
@@ -15,10 +21,10 @@
 <body>
     <header class="header">
         <div class="container">
+            <a href="./index.html" lang="en" class="logo navigation__logo"><span class="navigation__web">Web</span>Studio</a>
             <nav class="navigation">
-                <a href="./index.html" lang="en" class="logo navigation__logo"><span class="navigation__web">Web</span>Studio</a>
                 <ul class="navigation__list list">
-                    <li class="navigation__item"><a href="./index.html" class="navigation__link navigation_  current link">Студия</a></li>
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link current link">Студия</a></li>
                     <li class="navigation__item"><a href="./portfolio.html" class="navigation__link link">Портфолио</a></li>
                     <li class="navigation__item"><a href="#contancts" class="navigation__link link">Контакты</a></li>
                 </ul>
@@ -39,6 +45,45 @@
                         </a>
                     </li>
                 </ul>
+            <!--<button type="button" class="navigation-button-open" class="js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+                <svg class="navigation-icon" width="24" height="16">
+                    <use href="./images/icons.svg#icon-navigation-button-little"></use>
+                </svg>
+            </button>
+            <div class="header-mobile-menu js-header-mobile-menu" id="mobile-menu">
+                    <div class="header-mobile-container">
+                        <button type="button" class="header-mobile-menu__btn-close js-close-menu">
+                            <svg class="header-mobile-menu__icon-close" width="19" height="19">
+                                <use href="./images/icons.svg#icon-close-hero-button"></use>
+                            </svg>
+                        </button>
+                        <div class="header-mobile-menu">
+                            <nav class="header-mobile-menu-nav">
+                                <ul class="header-mobile-menu-nav__list list">
+                                    <li class="header-mobile-menu-nav__item"><a href="./index.html" class="header-mobile-menu-nav__link link">Студия</a></li>
+                                    <li class="header-mobile-menu-nav__item"><a href="./portfolio.html" class="header-mobile-menu-nav__link link">Портфолио</a></li>
+                                    <li class="header-mobile-menu-nav__item"><a href="#contancts" class="header-mobile-menu-nav__link link">Контакты</a></li>
+                                </ul>
+                            </nav>     
+                                <ul class="mobile-contacts list">
+                                    <li class="mobile-contacts__item">
+                                        <a href="mailto:info@devstudio.com" class="mobile-contacts__links link">+38 096 111 11 11</a>
+                                    </li>
+                                    <li class="mobile-contacts__item">
+                                        <a href="tel:+380961111111" class="mobile-contacts__links link">info@devstudio.com</a>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-socs list">
+                                    <li class="mobile-socs__item"><a href="" class="mobile-socs__link link">Instagram</a></li>
+                                    <li class="mobile-socs__item"><a href="" class="mobile-socs__link link">Twitter</a></li>
+                                    <li class="mobile-socs__item"><a href="" class="mobile-socs__link link">Facebook</a></li>
+                                    <li class="mobile-socs__item"><a href="" class="mobile-socs__link link">LinkedIn</a></li>
+                                </ul>
+                        </div>
+                    </div>-->
+            </div>
         </div>
     </header>
     <main>
@@ -459,5 +504,12 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <!--<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>-->
 </body>
 </html>
