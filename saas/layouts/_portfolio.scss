@@ -1,6 +1,6 @@
 /* --- Filter Buttons ---  */
 .filter-button {
-  padding: 2px 14px;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.62;
@@ -20,36 +20,30 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   @include mobile {
-    padding: 6px 22px;
-    font-style: 16px;
+    font-size: 16px;
   }
   @include tablet {
-    padding: 6px 22px;
-    font-style: 16px;
+    font-size: 16px;
   }
   @include desktop {
-    padding: 6px 22px;
-    font-style: 16px;
+    font-size: 16px;
   }
 }
 
 .filter-button-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 8px;
   margin-bottom: 40px;
   justify-content: left;
-  @include mobile {
-    gap: 8px;
-    margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    row-gap: 15px;
   }
   @include tablet {
-    gap: 8px;
     margin-bottom: 50px;
     justify-content: center;
   }
   @include desktop {
-    gap: 8px;
     margin-bottom: 50px;
     justify-content: center;
   }
@@ -97,6 +91,9 @@
   border: 1px solid #eeeeee;
   padding: 20px 24px;
   border-top: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
 }
 
 .portfolio-item {
@@ -123,6 +120,11 @@
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
 

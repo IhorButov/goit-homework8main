@@ -8,13 +8,10 @@
 }
 .section-hero {
   text-align: center;
-  padding: 50px 0;
+  padding: 118px 0;
   background-color: #2f303a;
-  @include mobile {
-    padding: 120px 0;
-  }
   @include tablet {
-    padding: 150px 0;
+    padding: 118px 0;
   }
   @include desktop {
     padding: 200px 0;

@@ -8,6 +8,12 @@
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  @include tablet {
+    margin-right: 88px;
+  }
+}
+.logo.footer__logo {
+  margin-right: 0;
 }
 /*.navigation__logo {
   padding-top: 16px;

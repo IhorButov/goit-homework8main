@@ -1,5 +1,5 @@
 .overlay {
-  width: 320px;
+  max-width: 320px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
@@ -14,14 +14,14 @@
       url(../images/hero-overlay-mobile-2x.jpg);
   }
   @include mobile {
-    width: 480px;
+    max-width: 480px;
     @include retina {
       background-image: var(--bg-gradient),
         url(../images/hero-overlay-mobile-2x.jpg);
     }
   }
   @include tablet {
-    width: 768px;
+    max-width: 768px;
     background-image: var(--bg-gradient), url(../images/hero-overlay-tablet.jpg);
     @include retina {
       background-image: var(--bg-gradient),
@@ -29,7 +29,7 @@
     }
   }
   @include desktop {
-    width: 1600px;
+    max-width: 1600px;
     background-image: var(--bg-gradient), url(../images/hero-overlay.jpg);
     @include retina {
       background-image: var(--bg-gradient), url(../images/hero-overlay-2x.jpg);
