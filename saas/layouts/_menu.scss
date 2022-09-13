@@ -5,6 +5,10 @@
 }
 .menu__button {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -15,21 +19,12 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
-  } /*
-  & .menu__icon-close {
-    display: none;
   }
-  &.is-open .menu__icon-close {
-    display: block;
-  }
-  &.is-open .menu__icon-open {
-    display: none;
-  }*/
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.mobile-menu {
+.menu-container {
   position: fixed;
   background-color: var(--primaty-bg-color);
   top: 0;
@@ -37,18 +32,23 @@
   width: 100vw;
   height: 100vh;
   padding: 10px 15px 48px 40px;
-  z-index: 100;
+  z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.menu-container .menu-button {
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-container .menu__button {
   position: absolute;
   top: 16px;
   right: 16px;
+  color: #fff;
 }
+
 .mobile-navigation__item:not(:last-child) {
   margin-bottom: 32px;
 }

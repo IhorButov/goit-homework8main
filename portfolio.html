@@ -45,10 +45,12 @@
           <nav class="navigation">
             <ul class="navigation__list list">
               <li class="navigation__item">
-                <a href="./index.html" class="navigation__link link">Студия</a>
+                <a href="./index.html" class="navigation__link current link"
+                  >Студия</a
+                >
               </li>
               <li class="navigation__item">
-                <a href="./portfolio.html" class="navigation__link current link"
+                <a href="./portfolio.html" class="navigation__link link"
                   >Портфолио</a
                 >
               </li>
@@ -91,60 +93,72 @@
             </svg>
           </button>
           <!-- Мобильная Навигация -->
-          <nav class="mobile-navigation">
-            <ul class="mobile-navigation__list list">
-              <li class="mobile-navigation__item">
-                <a href="./index.html" class="mobile-navigation__link link"
-                  >Студия</a
+          <div class="mobile-menu-container">
+            <nav class="mobile-navigation">
+              <ul class="mobile-navigation__list list">
+                <li class="mobile-navigation__item">
+                  <a href="./index.html" class="mobile-navigation__link link"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mobile-navigation__item">
+                  <a
+                    href="./portfolio.html"
+                    class="mobile-navigation__link link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mobile-navigation__item">
+                  <a href="#contancts" class="mobile-navigation__link link"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- Мобильные Контакты -->
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contacts__links link"
                 >
+                  <svg
+                    class="mobile-contacts__mail-icon"
+                    width="16"
+                    height="12"
+                  >
+                    <use href="./images/icons.svg#icon-mail"></use></svg
+                  >info@devstudio.com
+                </a>
               </li>
-              <li class="mobile-navigation__item">
-                <a href="./portfolio.html" class="mobile-navigation__link link"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="mobile-navigation__item">
-                <a href="#contancts" class="mobile-navigation__link link"
-                  >Контакты</a
-                >
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__links link">
+                  <svg
+                    class="mobile-contacts__phone-icon"
+                    width="10"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-phone"></use></svg
+                  >+38 096 111 11 11
+                </a>
               </li>
             </ul>
-          </nav>
-          <!-- Мобильные Контакты -->
-          <ul class="mobile-contacts list">
-            <li class="mobile-contacts__item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="mobile-contacts__links link"
-              >
-                <svg class="mobile-contacts__mail-icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-mail"></use></svg
-                >info@devstudio.com
-              </a>
-            </li>
-            <li class="mobile-contacts__item">
-              <a href="tel:+380961111111" class="mobile-contacts__links link">
-                <svg class="mobile-contacts__phone-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-phone"></use></svg
-                >+38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-          <!-- Ссылки на социальные сети -->
-          <ul class="mobile-socs list">
-            <li class="mobile-socs__item">
-              <a href="" class="mobile-socs__link link">Instagram</a>
-            </li>
-            <li class="mobile-socs__item">
-              <a href="" class="mobile-socs__link link">Twitter</a>
-            </li>
-            <li class="mobile-socs__item">
-              <a href="" class="mobile-socs__link link">Facebook</a>
-            </li>
-            <li class="mobile-socs__item">
-              <a href="" class="mobile-socs__link link">LinkedIn</a>
-            </li>
-          </ul>
+            <!-- Ссылки на социальные сети -->
+            <ul class="mobile-socs list">
+              <li class="mobile-socs__item">
+                <a href="" class="mobile-socs__link link">Instagram</a>
+              </li>
+              <li class="mobile-socs__item">
+                <a href="" class="mobile-socs__link link">Twitter</a>
+              </li>
+              <li class="mobile-socs__item">
+                <a href="" class="mobile-socs__link link">Facebook</a>
+              </li>
+              <li class="mobile-socs__item">
+                <a href="" class="mobile-socs__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
