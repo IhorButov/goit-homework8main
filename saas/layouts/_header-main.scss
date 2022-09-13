@@ -13,136 +13,115 @@
     display: flex;
     align-items: center;
   }
-
   @media screen and (max-width: 767px) {
     display: flex;
     align-items: center;
   }
-  /*
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 1;
-    opacity: 0;
-    background-color: var(--primaty-bg-color);
-    pointer-events: none;
-    transform-origin: top;
-    transform: translateX(-100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }*/
 }
-.header__menu {
-  background-color: #ffffff;
-  top: 0;
-  left: 0;
-  width: 100vw;
-}
-.menu__button {
-  display: inline-flex;
-  margin: 0;
-  margin-left: auto;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  fill: var(--menu-button);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+.navigation {
+  display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
   }
-  & .menu__icon-close {
-    display: none;
+  @include desktop {
+    display: flex;
+    align-items: center;
   }
-  &.is-open .menu__icon-close {
+  &__link {
+    position: relative;
     display: block;
+    color: var(--primary-text-color);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include font(500, 14px, 1.14, 0.02em);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      cursor: pointer;
+    }
+
+    &.current {
+      color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 767px) {
+      @include font(500, 40px, 1.18, 0.02em);
+    }
+
+    @media screen and (min-width: 768px) {
+      @include font(500, 14px, 1.14, 0.02em);
+      font-weight: 500;
+      padding: 32px 0;
+    }
   }
-  &.is-open .menu__icon-open {
-    display: none;
-  }
+
   @media screen and (min-width: 768px) {
-    display: none;
+    margin-right: auto;
+
+    &__link.current::after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      bottom: -1px;
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
   }
 }
-.menu__icon-close {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: currentColor;
-  .menu__button:hover & {
-    fill: var(--accent-color);
-  }
-}
-.menu__icon-open {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: currentColor;
-  .menu__button:hover & {
-    fill: var(--accent-color);
-  }
+.navigation__list {
+  display: flex;
+  margin-right: auto;
+  gap: 50px;
 }
 
+.contacts {
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    .header & {
+      margin-left: auto;
+    }
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
 .contacts__item:not(:last-child) {
   margin-bottom: 10px;
   @include desktop {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  .contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-}
-/*.contacts {
-  display: block;
-  @include desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-}*/
-.mobile-socs {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.mobile-socs__item {
-  padding-right: 10px;
-  /*border-right: 1px solid rgba(33, 33, 33, 0.2);*/
-  &:not(:first-child) {
-    padding-left: 10px;
-  }
-  &:not(:last-child) {
-    padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-  }
-  &:nth-child(3) {
-    @media screen and (max-width: 399px) {
-      border-right: none;
-    }
-  }
-
-  &:nth-child(4) {
-    @media screen and (max-width: 399px) {
-      border-left: 1px solid rgba(33, 33, 33, 0.2);
-    }
-  }
-}
-.mobile-socs__link {
+.contacts__links {
+  display: flex;
+  align-items: center;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
-  transition: color 250ms var(--transition-timing-main);
+  color: var(--primary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-main);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+}
+.contacts__phone-icon,
+.contacts__mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 .current::after {
   content: "";
