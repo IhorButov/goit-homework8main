@@ -24,7 +24,6 @@
   color: var(--primary-text-color);
 }
 .job {
-  /*padding: 30px 0;*/
   padding-top: 30px;
   padding-left: 0;
   padding-bottom: 24px;
@@ -49,18 +48,6 @@
     width: 270px;
   }
 }
-/*.image-team {
-  width: 290px;
-  @include mobile {
-    width: 450px;
-  }
-  @include tablet {
-    width: 354px;
-  }
-  @include desktop {
-    width: 270px;
-  }
-}*/
 .social-list {
   display: flex;
   justify-content: center;
