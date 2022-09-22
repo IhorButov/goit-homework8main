@@ -15,8 +15,19 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="./css/main.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    
+
 </head>
 <body>
     <header class="header">
@@ -171,74 +182,114 @@
                     </div>
             </div>
         </section>
-        <!-- Слайдер --->
+        <!-- Слайдер Section --->
         <section class="section-slider">
-            <div class="gallery__thumb">
-              <div class="gallery__swap">
-                  <div class="gallery__photo-1">
-                      <picture class="gallery__picture">
-                          <source
-                          srcset="
-                              ./images/team-gallery/gallery-item2-desktop.jpg    1x,
-                              ./images/team-gallery/gallery-item2-desktop-2x.jpg 2x
-                          "
-                          media="(min-width:1200px)"/>
-                          <source
-                          srcset="
-                              ./images/team-gallery/gallery-item2-desktop.jpg    1x,
-                              ./images/team-gallery/gallery-item2-desktop-2x.jpg 2x
-                          "
-                          media="(min-width:768px)"
-                          />
-                          <source
-                          srcset="
-                              ./images/team-gallery/gallery-item2-desktop.jpg    1x,
-                              ./images/team-gallery/gallery-item2-desktop-2x.jpg 2x
-                          "
-                          media="(max-width:767px)"
-                          />
-                          <img
-                          src="./images/team-gallery/gallery-item1-desktop.jpg"
-                          alt="Second Gallery IceCream"
-                          width="1013"
-                          class="gallery__image"
-                          />
-                      </picture>
-                  </div>    
-                  <div class="gallery__photo-2">
-                      <picture class="gallery__picture">
-                          <source
-                          srcset="
-                              ./images/team-gallery/main-gallery-desktop.jpg    1x,
-                              ./images/team-gallery/main-gallery-desktop-2x.jpg 2x
-                          "
-                          media="(min-width:1200px)"
-                          />
-                          <source
-                          srcset="
-                              ./images/team-gallery/main-gallery-tablet.jpg    1x,
-                              ./images/team-gallery/main-gallery-tablet-2x.jpg 2x
-                          "
-                          media="(min-width:768px)"
-                          />
-                          <source
-                          srcset="
-                              ./images/team-gallery/main-gallery-mobile.jpg    1x,
-                              ./images/team-gallery/main-gallery-mobile-2x.jpg 2x
-                          "
-                          media="(max-width:767px)"
-                          />
-                          <img
-                          src="./images/team-gallery/main-gallery-desktop.jpg"
-                          alt="Main Gallery Icecream"
-                          class="gallery__image"
-                          width="1013"
-                          />
-                      </picture>
-                  </div>
-              </div>
+            <!-- Сам слайДЕР-->
+            <div class="gallery__thumb image-slider swiper-container">
+                <!-- Дополнительный враппер -->
+                <div class="gallery__swap swiper-wrapper">
+                <!-- Cам слайд -->
+                    <div class="image-slider__slide swiper-slide">
+                        <picture class="image-slider__image">
+                            <source
+                            srcset="
+                                ./images/team-gallery/main-gallery-desktop.jpg    1x,
+                                ./images/team-gallery/main-gallery-desktop-2x.jpg 2x
+                            "
+                            media="(min-width:1200px)"
+                            />
+                            <source
+                            srcset="
+                                ./images/team-gallery/main-gallery-tablet.jpg    1x,
+                                ./images/team-gallery/main-gallery-tablet-2x.jpg 2x
+                            "
+                            media="(min-width:768px)"
+                            />
+                            <source
+                            srcset="
+                                ./images/team-gallery/main-gallery-mobile.jpg    1x,
+                                ./images/team-gallery/main-gallery-mobile-2x.jpg 2x
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img
+                            src="./images/team-gallery/main-gallery-desktop.jpg"
+                            alt="Main Gallery Icecream"
+                            class="gallery__image"
+                            width="1013"
+                            />
+                        </picture>
+                    </div>
+                    <!-- Cам слайд -->
+                    <div class="image-slider__slide swiper-slide">
+                        <picture class="image-slider__image">
+                            <source
+                            srcset="
+                                ./images/team-gallery/gallery-item1-desktop.jpg    1x,
+                                ./images/team-gallery/gallery-item1-desktop-2x.jpg 2x
+                            "
+                            media="(min-width:1200px)"/>
+                            <source
+                            srcset="
+                                ./images/team-gallery/gallery-item1-desktop.jpg    1x,
+                                ./images/team-gallery/gallery-item1-desktop-2x.jpg 2x
+                            "
+                            media="(min-width:768px)"
+                            />
+                            <source
+                            srcset="
+                                ./images/team-gallery/gallery-item1-desktop.jpg    1x,
+                                ./images/team-gallery/gallery-item1-desktop-2x.jpg 2x
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img
+                            src="./images/team-gallery/gallery-item1-desktop.jpg"
+                            alt="Second Gallery IceCream"
+                            width="1013"
+                            class="gallery__image"
+                            />
+                        </picture>
+                    </div>
+                    <!-- Cам слайд -->
+                    <div class="image-slider__slide swiper-slide">
+                        <picture class="image-slider__image">
+                            <source
+                            srcset="
+                                ./images/team-gallery/gallery-item2-desktop.jpg    1x,
+                                ./images/team-gallery/gallery-item2-desktop-2x.jpg 2x
+                            "
+                            media="(min-width:1200px)"/>
+                            <source
+                            srcset="
+                                ./images/team-gallery/gallery-item2-desktop.jpg    1x,
+                                ./images/team-gallery/gallery-item2-desktop-2x.jpg 2x
+                            "
+                            media="(min-width:768px)"
+                            />
+                            <source
+                            srcset="
+                                ./images/team-gallery/gallery-item2-desktop.jpg    1x,
+                                ./images/team-gallery/gallery-item2-desktop-2x.jpg 2x
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img
+                            src="./images/team-gallery/gallery-item2-desktop.jpg"
+                            alt="Second Gallery IceCream"
+                            width="1013"
+                            class="gallery__image"
+                            />
+                        </picture>
+                    </div>
+                </div>
+                <div>
+                    <div class="swiper-button-next">N</div>
+                    <div class="swiper-button-prev">Y</div>
+                </div>
+
             </div>
-          </section>
+        </section>
         <!--    особенности   -->
         <section class="section-features">
             <div class="container">
@@ -494,55 +545,6 @@
                 </ul>
             </div>
         </section>
-        <section class="gallery-section">
-            <div class="gallery-thumb">
-                <picture class="gallery-thumb__picture">
-                            <source
-                            srcset="
-                                ./images/team-gallery/main-gallery-desktop.jpg    1x,
-                                ./images/team-gallery/main-gallery-desktop-2x.jpg 2x
-                            "
-                            media="(min-width:1200px)"
-                            />
-                            <source
-                            srcset="
-                                ./images/team-gallery/main-gallery-tablet.jpg    1x,
-                                ./images/team-gallery/main-gallery-tablet-2x.jpg 2x
-                            "
-                            media="(min-width:768px)"
-                            />
-                            <source
-                            srcset="
-                                ./images/team-gallery/main-gallery-mobile.jpg    1x,
-                                ./images/team-gallery/main-gallery-mobile-2x.jpg 2x
-                            "
-                            media="(max-width:767px)"
-                            />
-                            <img
-                                src="./images/team-gallery/main-gallery-desktop.jpg"
-                                alt="Main Gallery Icecream"
-                                class="gallery-thumb__image"
-                                width="1013"
-                            />
-                </picture>
-                <picture class="gallery-thumb__picture">
-                            <source 
-                                srcset="./images/team-gallery/gallery-item1-desktop.jpg 1x, ./images/team-gallery/gallery-item1-desktop-2x.jpg 2x"
-                                src="./images/team-gallery/gallery-item1-desktop.jpg">
-                            <img 
-                                src="./images/team-gallery/gallery-item1-desktop.jpg" alt="Second Gallery IceCream" width="1013"
-                                class="gallery-thumb__image">
-                </picture>
-                <picture class="gallery-thumb__picture">
-                            <source 
-                                srcset="./images/team-gallery/gallery-item2-desktop.jpg 1x, ./images/team-gallery/gallery-item2-desktop-2x.jpg 2x"
-                                src="./images/team-gallery/gallery-item1-desktop.jpg">
-                            <img 
-                                src="./images/team-gallery/gallery-item1-desktop.jpg" alt="Second Gallery IceCream" width="1013"
-                                class="gallery-thumb__image">
-                </picture>
-            </div>
-        </section>
         <!-- Клиенты -->
         <section class="section-clients">
             <div class="container">
@@ -665,6 +667,9 @@
     ></script>
     <script src="./js/modal.js"></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>

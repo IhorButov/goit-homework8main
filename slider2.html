@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="./css/main.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!-- Слайдер Section --->
+    <section class="section-slider">
+        <!-- Сам слайДЕР-->
+        <div class="swiper mySwiper">
+            <!-- Дополнительный враппер -->
+            <div class="swiper-wrapper">
+            <!-- Cам слайд -->
+                <div class="swiper-slide">
+                    <picture class="image-slider__image">
+                        <source
+                        srcset="
+                        ./images/box1.jpg    1x,
+                        ./images/box1.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        />
+                        <source
+                        srcset="
+                            ./images/box1.jpg    1x,
+                            ./images/box1.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        />
+                        <source
+                        srcset="
+                            ./images/box1.jpg    1x,
+                            ./images/box1.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        />
+                        <img
+                        src="./images/box1.jpg"
+                        alt="Main Gallery Icecream"
+                        class="gallery__image"
+                        width="1013"
+                        />
+                    </picture>
+                </div>
+                <!-- Cам слайд -->
+                <div class="swiper-slide">
+                    <picture class="image-slider__image">
+                        <source
+                        srcset="
+                            ./images/box2.jpg    1x,
+                            ./images/box2.jpg 2x
+                        "
+                        media="(min-width:1200px)"/>
+                        <source
+                        srcset="
+                            ./images/box2.jpg    1x,
+                            ./images/box2.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        />
+                        <source
+                        srcset="
+                            ./images/box2.jpg    1x,
+                            ./images/box2.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        />
+                        <img
+                        src="./images/box2.jpg"
+                        alt="Second Gallery IceCream"
+                        width="1013"
+                        class="gallery__image"
+                        />
+                    </picture>
+                </div>
+                <!-- Cам слайд -->
+                <div class="swiper-slide">
+                    <picture class="image-slider__image">
+                        <source
+                        srcset="
+                            ./images/box3.jpg    1x,
+                            ./images/box3.jpg 2x
+                        "
+                        media="(min-width:1200px)"/>
+                        <source
+                        srcset="
+                            ./images/box3.jpg    1x,
+                            ./images/box3.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        />
+                        <source
+                        srcset="
+                            ./images/box3.jpg    1x,
+                            ./images/box3.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        />
+                        <img
+                        src="./images/box3.jpg"
+                        alt="Second Gallery IceCream"
+                        width="1013"
+                        class="gallery__image"
+                        />
+                    </picture>
+                </div>
+            </div>
+            <div>
+                <div class="swiper-button-next">Next</div>
+                <div class="swiper-button-prev">Prev</div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="slider2.js"></script>
+</body>
+</html>
