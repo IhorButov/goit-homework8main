@@ -147,6 +147,10 @@ html {
   }
 }
 
+.section-slider {
+  border: 1px solid red;
+}
+
 .section-features {
   padding: 60px 0;
 }
@@ -788,6 +792,121 @@ html {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.gallery__thumb {
+  position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+@media screen and (min-width: 480px) {
+  .gallery__thumb {
+    width: 440px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__thumb {
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__thumb {
+    width: 1013px;
+  }
+}
+
+.gallery__swap {
+  /*top: -24px;*/
+  background-color: blue;
+  width: 280px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  overflow: auto;
+  overflow-y: hidden;
+  border: none;
+}
+@media screen and (min-width: 480px) {
+  .gallery__swap {
+    width: 440px;
+    height: 180px;
+    /*top: -26px;*/
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__swap {
+    width: 704px;
+    height: 327px;
+    /*top: -164px;*/
+    border-radius: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__swap {
+    width: 1013px;
+    height: 422px;
+    /*top: -94px;*/
+    border-radius: 24px;
+  }
+}
+
+.gallery-thumb img {
+  display: block;
+}
+
+.gallery__swap img {
+  object-fit: cover;
+}
+
+.gallery__swap .gallery__photo-1 {
+  /*position: relative;*/
+  animation: rotateY1 10s linear infinite;
+  backface-visibility: hidden;
+}
+
+.gallery__swap .gallery__photo-2 {
+  /*position: absolute;*/
+  top: 0;
+  object-fit: cover;
+  animation: rotateY2 10s linear infinite;
+  backface-visibility: hidden;
+}
+
+@keyframes rotateY1 {
+  0% {
+    transform: rotateY(-180deg);
+  }
+  40% {
+    transform: rotateY(-180deg);
+  }
+  50% {
+    transform: rotateY(0);
+  }
+  90% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes rotateY2 {
+  0% {
+    transform: rotateY(0);
+  }
+  40% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  90% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 .team {
   display: flex;
   justify-content: center;
